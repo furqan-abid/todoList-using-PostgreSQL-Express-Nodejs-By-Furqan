@@ -27,11 +27,9 @@ This project implements a simple Todo List application using PostgreSQL for the 
 
 3. **Install dependencies:
 
-  ```bash
-  npm install
+   npm install
 
-
-4. **Set up environment variables:
+5. **Set up environment variables:
 Create a .env file in the project server/config/config.env and add the following:
 
 DB_USER_NAME=your_postgres_username
@@ -42,7 +40,6 @@ DB_NAME=your_database_name
 
 5. **Run the application:
 
-```bash
   npm run dev
 
 Contributors
