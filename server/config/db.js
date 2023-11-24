@@ -1,21 +1,14 @@
 const Pool = require('pg').Pool
-
-// const pool = new Pool({
-//     user:'postgres',
-//     password:"13252",
-//     host:'localhost',
-//     port:5432,
-//     database:'perntodo',
-// })
+require('dotenv').config({path: 'config/config.env'});
 
 const pool = new Pool({
-    user: 'qbaqmmad', 
-    host: 'cornelius.db.elephantsql.com', 
-    database: 'qbaqmmad', 
-    password: 'fY5I9t1U3h6RrIr7gw9_ERlw4z5r1gP9', 
+    user: process.env.USER_NAME, 
+    host: process.env.HOST, 
+    database: process.env.DATABASE, 
+    password: process.env.PASSWORD, 
     port: 5432, 
     ssl: {
-      rejectUnauthorized: false, // For testing; use true in production with proper certificates
+      rejectUnauthorized: false,
     },
   });
 
